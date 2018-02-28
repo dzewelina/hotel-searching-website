@@ -1,4 +1,4 @@
-import { configure, shallow } from 'enzyme';
+import { configure, shallow, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 configure({ adapter: new Adapter() });
 
@@ -14,7 +14,7 @@ describe('Hotels component', () => {
     expect(numberOfHotels).toEqual(numberOfHotelsData);
   });
   it('updates state when checkbox clicked', () => {
-    const wrapper = shallow(<Hotels />);
+    const wrapper = mount(<Hotels />);
     wrapper.find('input[value="car park"]').simulate('change', { target: { value: 'car park' } });
     expect(wrapper.state().filters).toEqual(['car park']);
 
