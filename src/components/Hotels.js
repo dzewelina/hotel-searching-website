@@ -7,17 +7,27 @@ import _ from 'underscore';
 class Hotels extends Component {
   state = {
     hotels,
-    filters: []
-  }
+    filters: [],
+    sort: 0
+  };
 
   render() {
-    const { hotels, facilities, filters } = this.state;
+    const { hotels, filters, sort } = this.state;
     return (
       <div>
-        <Checkboxes facilities={facilities} handleChange={this.handleChange}/>
+        <Checkboxes handleChange={this.updateFilters} />
+        <div className='form-group'>
+          <label>Sort by: <b onChange={this.updateSort}>Star Rating</b></label>
+          <select className='form-control col-md-1' onChange={this.updateSort}>
+            <option value='0'>Choose...</option>
+            <option value='-1'>High to Low</option>
+            <option value='1'>Low to High</option>
+          </select>
+        </div>
         <ul className='list-unstyled'>
           {hotels
             .filter(hotel => !_.difference(filters, hotel.Facilities).length)
+            .sort((hotelA, hotelB) => sort * (hotelA.StarRating - hotelB.StarRating))
             .map((hotel, i) => (
               <Hotel key={i} hotel={hotel} />
             ))}
@@ -26,7 +36,11 @@ class Hotels extends Component {
     );
   }
 
-  handleChange = (e) => {
+  updateSort = (e) => {
+    this.setState({ sort: e.target.value });
+  }
+
+  updateFilters = (e) => {
     const checked = e.target.value;
     let { filters } = this.state;
 
