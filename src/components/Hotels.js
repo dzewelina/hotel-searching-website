@@ -4,17 +4,29 @@ import Hotel from './Hotel';
 
 class Hotels extends Component {
   state = {
-    hotels
+    hotels,
+    facilities: ['car park', 'restaurant', 'bar', 'gym', 'pool']
   }
 
   render() {
-    const { hotels } = this.state;
+    const { hotels, facilities } = this.state;
     return (
-      <ul className='list-unstyled'>
-        {hotels.map((hotel, i) => (
-          <Hotel key={i} hotel={hotel}/>
+      <div>
+        <h2>Filters</h2>
+        {facilities.map((facility, i) => (
+          <div key={i} className='form-check'>
+            <input className='form-check-input' type='checkbox' />
+            <label className='form-check-label'>
+              {facility}
+            </label>
+          </div>
         ))}
-      </ul>
+        <ul className='list-unstyled'>
+          {hotels.map((hotel, i) => (
+            <Hotel key={i} hotel={hotel} />
+          ))}
+        </ul>
+      </div>
     );
   }
 }
