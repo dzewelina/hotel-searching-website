@@ -10,7 +10,7 @@ describe('Hotels component', () => {
   it('renders all hotels', () => {
     const wrapper = shallow(<Hotels/>);
     const numberOfHotelsData = hotels.length;
-    const numberOfHotels = wrapper.find('li.hotel').length;
+    const numberOfHotels = wrapper.find('Hotel').length;
     expect(numberOfHotelsData).toEqual(numberOfHotels);
   });
 });
