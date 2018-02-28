@@ -1,0 +1,38 @@
+[
+  {
+    "Name": "Spring Phoenix Resort",
+    "StarRating": 5,
+    "Facilities": ["car park", "restaurant", "bar"],
+    "Image":"https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb"
+  },
+  {
+    "Name": "Triple Pass Hotel",
+    "StarRating": 3,
+    "Facilities": ["car park", "gym"],
+    "Image": "https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb"
+  },
+  {
+    "Name": "Southern Shack Hotel & Spa",
+    "StarRating": 4,
+    "Facilities": ["pool", "bar", "restaurant"],
+    "Image": "https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb"
+  },
+  {
+    "Name": "Oriental Cove Resort",
+    "StarRating": 2,
+    "Facilities": ["car park", "pool"],
+    "Image": "https://images.pexels.com/photos/6534/holiday-vacation-hotel-luxury.jpg?w=1260&h=750&auto=compress&cs=tinysrgb"
+  },
+  {
+    "Name": "Lunar Hotel",
+    "StarRating": 4,
+    "Facilities": ["pool", "bar", "restaurant"],
+    "Image": "https://images.pexels.com/photos/53577/hotel-architectural-tourism-travel-53577.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb"
+  },
+  {
+    "Name": "Rosewood Hotel",
+    "StarRating": 1,
+    "Facilities": [],
+    "Image": "https://images.pexels.com/photos/186181/pexels-photo-186181.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb"
+  }
+]
