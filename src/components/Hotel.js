@@ -1,7 +1,5 @@
 import React from 'react';
-import propTypes from 'prop-types';
-
-
+import PropTypes from 'prop-types';
 
 const Hotel = ({ hotel }) => (
   <li className='hotel media'>
@@ -16,9 +14,8 @@ const Hotel = ({ hotel }) => (
   </li>
 );
 
-
 Hotel.propTypes = {
-  hotel: propTypes.object.isRequired
+  hotel: PropTypes.object.isRequired
 };
 
 export default Hotel;
