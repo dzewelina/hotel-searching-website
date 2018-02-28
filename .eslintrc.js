@@ -5,6 +5,7 @@ module.exports = {
       "node": true,
       "mocha": true
   },
+  "parser": "babel-eslint",
   "extends": ["eslint:recommended", "plugin:react/recommended"],
   "parserOptions": {
       "ecmaFeatures": {
