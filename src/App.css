@@ -1,3 +1,10 @@
-.App {
-  text-align: center;
+.hotel img {
+  height: 150px
+}
+
+.hotel {
+  border: solid black 1px;
+  border-radius: 10px;
+  margin: 30px;
+  padding: 15px;
 }

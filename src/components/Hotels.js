@@ -9,17 +9,19 @@ class Hotels extends Component {
   render() {
     const { hotels } = this.state;
     return (
-      <div>
+      <ul className='list-unstyled'>
         {hotels.map((hotel, i) => (
-          <div key={i} className='hotel'>
-            <h1>{hotel.Name}</h1>
-            <p>
-              {hotel.Facilities.map((facility, i) => (<span key={i}>{facility} </span>))}
-            </p>
-            <img src={hotel.Image} alt={`${hotel.Name}`} />
-          </div>
+          <li key={i} className='hotel media'>
+            <img className='align-self-start mr-3' src={hotel.Image} alt={`${hotel.Name}`} />
+            <div className='media-body'>
+              <h1 className='mt-0'>{hotel.Name}</h1>
+              <p>
+                {hotel.Facilities.map((facility, i) => (<span key={i}>{facility} </span>))}
+              </p>
+            </div>
+          </li>
         ))}
-      </div>
+      </ul>
     );
   }
 }
