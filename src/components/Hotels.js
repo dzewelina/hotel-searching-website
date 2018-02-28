@@ -11,7 +11,7 @@ class Hotels extends Component {
     return (
       <div>
         {hotels.map((hotel, i) => (
-          <div key={i}>
+          <div key={i} className='hotel'>
             <h1>{hotel.Name}</h1>
             <p>
               {hotel.Facilities.map((facility, i) => (<span key={i}>{facility} </span>))}
