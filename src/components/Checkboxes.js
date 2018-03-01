@@ -14,8 +14,8 @@ class Checkboxes extends Component {
         <h2>Filters</h2>
         {facilities.map((facility, i) => (
           <div key={i} className='form-check'>
-            <input className='form-check-input' type='checkbox' value={facility} onChange={handleChange} />
             <label className='form-check-label'>
+              <input className='form-check-input' type='checkbox' value={facility} onChange={handleChange} />
               {facility}
             </label>
           </div>
