@@ -1,12 +1,17 @@
 import { configure, shallow, mount } from 'enzyme';
 import Adapter from 'enzyme-adapter-react-16';
 configure({ adapter: new Adapter() });
+import renderer from 'react-test-renderer';
 
 import React from 'react';
 import Hotels from '../components/Hotels';
 import hotels from '../data/hotels.json';
 
 describe('Hotels component', () => {
+  it('matches the snapshot', () => {
+    const tree = renderer.create(<Hotels />).toJSON();
+    expect(tree).toMatchSnapshot();
+  });
   it('renders all hotels', () => {
     const wrapper = shallow(<Hotels />);
     const numberOfHotelsData = hotels.length;

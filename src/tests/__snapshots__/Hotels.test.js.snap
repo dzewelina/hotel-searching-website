@@ -1,0 +1,339 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Hotels component matches the snapshot 1`] = `
+<div
+  className="hotelsContainer"
+>
+  <div
+    className="filters"
+  >
+    <h2>
+      Filters
+    </h2>
+    <div
+      className="form-check"
+    >
+      <label
+        className="form-check-label"
+      >
+        <input
+          className="form-check-input"
+          onChange={[Function]}
+          type="checkbox"
+          value="car park"
+        />
+        car park
+      </label>
+    </div>
+    <div
+      className="form-check"
+    >
+      <label
+        className="form-check-label"
+      >
+        <input
+          className="form-check-input"
+          onChange={[Function]}
+          type="checkbox"
+          value="restaurant"
+        />
+        restaurant
+      </label>
+    </div>
+    <div
+      className="form-check"
+    >
+      <label
+        className="form-check-label"
+      >
+        <input
+          className="form-check-input"
+          onChange={[Function]}
+          type="checkbox"
+          value="bar"
+        />
+        bar
+      </label>
+    </div>
+    <div
+      className="form-check"
+    >
+      <label
+        className="form-check-label"
+      >
+        <input
+          className="form-check-input"
+          onChange={[Function]}
+          type="checkbox"
+          value="gym"
+        />
+        gym
+      </label>
+    </div>
+    <div
+      className="form-check"
+    >
+      <label
+        className="form-check-label"
+      >
+        <input
+          className="form-check-input"
+          onChange={[Function]}
+          type="checkbox"
+          value="pool"
+        />
+        pool
+      </label>
+    </div>
+  </div>
+  <div
+    className="sortingAndHotels"
+  >
+    <div
+      className="form-group sorting"
+    >
+      <label>
+        Sort by: 
+        <b>
+          Star Rating
+        </b>
+      </label>
+      <select
+        className="form-control col-md-2"
+        onChange={[Function]}
+      >
+        <option
+          value="0"
+        >
+          Choose...
+        </option>
+        <option
+          value="-1"
+        >
+          High to Low
+        </option>
+        <option
+          value="1"
+        >
+          Low to High
+        </option>
+      </select>
+    </div>
+    <div
+      className="hotels"
+    >
+      <ul
+        className="list-unstyled"
+      >
+        <li
+          className="hotel media"
+        >
+          <img
+            alt="Spring Phoenix Resort"
+            className="align-self-start mr-3"
+            src="https://images.pexels.com/photos/271624/pexels-photo-271624.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb"
+          />
+          <div
+            className="media-body"
+          >
+            <h1
+              className="mt-0"
+            >
+              Spring Phoenix Resort
+            </h1>
+            <span>
+              5
+              <i
+                className="fas fa-star"
+              />
+            </span>
+            <p>
+              <span>
+                car park
+                 
+              </span>
+              <span>
+                restaurant
+                 
+              </span>
+              <span>
+                bar
+                 
+              </span>
+            </p>
+          </div>
+        </li>
+        <li
+          className="hotel media"
+        >
+          <img
+            alt="Triple Pass Hotel"
+            className="align-self-start mr-3"
+            src="https://images.pexels.com/photos/261102/pexels-photo-261102.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb"
+          />
+          <div
+            className="media-body"
+          >
+            <h1
+              className="mt-0"
+            >
+              Triple Pass Hotel
+            </h1>
+            <span>
+              3
+              <i
+                className="fas fa-star"
+              />
+            </span>
+            <p>
+              <span>
+                car park
+                 
+              </span>
+              <span>
+                gym
+                 
+              </span>
+            </p>
+          </div>
+        </li>
+        <li
+          className="hotel media"
+        >
+          <img
+            alt="Southern Shack Hotel & Spa"
+            className="align-self-start mr-3"
+            src="https://images.pexels.com/photos/338504/pexels-photo-338504.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb"
+          />
+          <div
+            className="media-body"
+          >
+            <h1
+              className="mt-0"
+            >
+              Southern Shack Hotel & Spa
+            </h1>
+            <span>
+              4
+              <i
+                className="fas fa-star"
+              />
+            </span>
+            <p>
+              <span>
+                pool
+                 
+              </span>
+              <span>
+                bar
+                 
+              </span>
+              <span>
+                restaurant
+                 
+              </span>
+            </p>
+          </div>
+        </li>
+        <li
+          className="hotel media"
+        >
+          <img
+            alt="Oriental Cove Resort"
+            className="align-self-start mr-3"
+            src="https://images.pexels.com/photos/6534/holiday-vacation-hotel-luxury.jpg?w=1260&h=750&auto=compress&cs=tinysrgb"
+          />
+          <div
+            className="media-body"
+          >
+            <h1
+              className="mt-0"
+            >
+              Oriental Cove Resort
+            </h1>
+            <span>
+              2
+              <i
+                className="fas fa-star"
+              />
+            </span>
+            <p>
+              <span>
+                car park
+                 
+              </span>
+              <span>
+                pool
+                 
+              </span>
+            </p>
+          </div>
+        </li>
+        <li
+          className="hotel media"
+        >
+          <img
+            alt="Lunar Hotel"
+            className="align-self-start mr-3"
+            src="https://images.pexels.com/photos/53577/hotel-architectural-tourism-travel-53577.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb"
+          />
+          <div
+            className="media-body"
+          >
+            <h1
+              className="mt-0"
+            >
+              Lunar Hotel
+            </h1>
+            <span>
+              4
+              <i
+                className="fas fa-star"
+              />
+            </span>
+            <p>
+              <span>
+                pool
+                 
+              </span>
+              <span>
+                bar
+                 
+              </span>
+              <span>
+                restaurant
+                 
+              </span>
+            </p>
+          </div>
+        </li>
+        <li
+          className="hotel media"
+        >
+          <img
+            alt="Rosewood Hotel"
+            className="align-self-start mr-3"
+            src="https://images.pexels.com/photos/186181/pexels-photo-186181.jpeg?w=1260&h=750&auto=compress&cs=tinysrgb"
+          />
+          <div
+            className="media-body"
+          >
+            <h1
+              className="mt-0"
+            >
+              Rosewood Hotel
+            </h1>
+            <span>
+              1
+              <i
+                className="fas fa-star"
+              />
+            </span>
+            <p />
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
+`;
