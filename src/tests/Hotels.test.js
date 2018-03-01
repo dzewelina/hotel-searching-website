@@ -61,4 +61,42 @@ describe('Hotels component', () => {
     wrapper.find('select').simulate('change', { target: { value: '1' } });
     expect(wrapper.state().sort).toEqual(1);
   });
+  it('sort hotels by star rating', () => {
+    const testingHotels = [
+      {
+        'Name': 'Testing Hotel',
+        'StarRating': 3,
+        'Facilities': ['car park', 'restaurant', 'bar'],
+        'Image': 'https://image'
+      },
+      {
+        'Name': 'Testing Hotel2',
+        'StarRating': 5,
+        'Facilities': ['car park', 'pool', 'gym'],
+        'Image': 'https://image2'
+      },
+      {
+        'Name': 'Testing Hotel2',
+        'StarRating': 2,
+        'Facilities': ['car park'],
+        'Image': 'https://image3'
+      }
+    ];
+    const wrapper = mount(<Hotels />);
+    wrapper.setState({ hotels: testingHotels, sort: 1 });
+    const numberOfStars1 = wrapper.find('span.starRating').at(0).text();
+    expect(numberOfStars1).toEqual('2');
+    const numberOfStars2 = wrapper.find('span.starRating').at(1).text();
+    expect(numberOfStars2).toEqual('3');
+    const numberOfStars3 = wrapper.find('span.starRating').at(2).text();
+    expect(numberOfStars3).toEqual('5');
+
+    wrapper.setState({ hotels: testingHotels, sort: -1 });
+    const numberOfStars4 = wrapper.find('span.starRating').at(0).text();
+    expect(numberOfStars4).toEqual('5');
+    const numberOfStars5 = wrapper.find('span.starRating').at(1).text();
+    expect(numberOfStars5).toEqual('3');
+    const numberOfStars6 = wrapper.find('span.starRating').at(2).text();
+    expect(numberOfStars6).toEqual('2');
+  });
 });
