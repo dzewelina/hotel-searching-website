@@ -53,3 +53,5 @@ To run tests navigate to the project directory and enter the following command:
   $ npm test
   ```
 Testing was carried out using Jest and Enzyme.
+
+I was not familiar with testing React components before. I have learned how to do React Testing in order to complete this project. I am planning to expand my knowledge in this area.
