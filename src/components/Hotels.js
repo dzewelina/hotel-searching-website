@@ -17,7 +17,7 @@ class Hotels extends Component {
       <div>
         <Checkboxes handleChange={this.updateFilters} />
         <div className='form-group'>
-          <label>Sort by: <b onChange={this.updateSort}>Star Rating</b></label>
+          <label>Sort by: <b>Star Rating</b></label>
           <select className='form-control col-md-1' onChange={this.updateSort}>
             <option value='0'>Choose...</option>
             <option value='-1'>High to Low</option>
@@ -37,7 +37,7 @@ class Hotels extends Component {
   }
 
   updateSort = (e) => {
-    this.setState({ sort: e.target.value });
+    this.setState({ sort: +e.target.value });
   }
 
   updateFilters = (e) => {

@@ -40,12 +40,20 @@ describe('Hotels component', () => {
       }
     ];
     const wrapper = shallow(<Hotels />);
-    wrapper.setState({ houses: testingHotels, filters: ['gym'] });
+    wrapper.setState({ hotels: testingHotels, filters: ['gym'] });
     const numberOfHotels = wrapper.find('Hotel').length;
     expect(numberOfHotels).toEqual(1);
 
     wrapper.setState({ filters: ['gym', 'bar'] });
     const numberOfHotels2 = wrapper.find('Hotel').length;
     expect(numberOfHotels2).toEqual(0);
+  });
+  it('updates state when sort option chosen', () => {
+    const wrapper = shallow(<Hotels />);
+    wrapper.find('select').simulate('change', { target: { value: '-1' } });
+    expect(wrapper.state().sort).toEqual(-1);
+
+    wrapper.find('select').simulate('change', { target: { value: '1' } });
+    expect(wrapper.state().sort).toEqual(1);
   });
 });
