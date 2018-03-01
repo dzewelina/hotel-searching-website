@@ -17,7 +17,9 @@ exports[`Hotel component matches the snapshot 1`] = `
     >
       Testing Hotel
     </h1>
-    <span>
+    <span
+      className="starRating"
+    >
       3
       <i
         className="fas fa-star"

@@ -141,7 +141,9 @@ exports[`Hotels component matches the snapshot 1`] = `
             >
               Spring Phoenix Resort
             </h1>
-            <span>
+            <span
+              className="starRating"
+            >
               5
               <i
                 className="fas fa-star"
@@ -179,7 +181,9 @@ exports[`Hotels component matches the snapshot 1`] = `
             >
               Triple Pass Hotel
             </h1>
-            <span>
+            <span
+              className="starRating"
+            >
               3
               <i
                 className="fas fa-star"
@@ -213,7 +217,9 @@ exports[`Hotels component matches the snapshot 1`] = `
             >
               Southern Shack Hotel & Spa
             </h1>
-            <span>
+            <span
+              className="starRating"
+            >
               4
               <i
                 className="fas fa-star"
@@ -251,7 +257,9 @@ exports[`Hotels component matches the snapshot 1`] = `
             >
               Oriental Cove Resort
             </h1>
-            <span>
+            <span
+              className="starRating"
+            >
               2
               <i
                 className="fas fa-star"
@@ -285,7 +293,9 @@ exports[`Hotels component matches the snapshot 1`] = `
             >
               Lunar Hotel
             </h1>
-            <span>
+            <span
+              className="starRating"
+            >
               4
               <i
                 className="fas fa-star"
@@ -323,7 +333,9 @@ exports[`Hotels component matches the snapshot 1`] = `
             >
               Rosewood Hotel
             </h1>
-            <span>
+            <span
+              className="starRating"
+            >
               1
               <i
                 className="fas fa-star"
