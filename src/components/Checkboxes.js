@@ -10,7 +10,7 @@ class Checkboxes extends Component {
     const { facilities } = this.state;
     const { handleChange } = this.props;
     return (
-      <div>
+      <div className='filters'>
         <h2>Filters</h2>
         {facilities.map((facility, i) => (
           <div key={i} className='form-check'>

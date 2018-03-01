@@ -15,17 +15,21 @@ class Hotels extends Component {
   render() {
     const { hotels, filters, sort } = this.state;
     return (
-      <div>
+      <div className='hotelsContainer'>
         <Checkboxes handleChange={this.updateFilters} />
-        <Sorting updateSort={this.updateSort} />
-        <ul className='list-unstyled'>
-          {hotels
-            .filter(hotel => !_.difference(filters, hotel.Facilities).length)
-            .sort((hotelA, hotelB) => sort * (hotelA.StarRating - hotelB.StarRating))
-            .map((hotel, i) => (
-              <Hotel key={i} hotel={hotel} />
-            ))}
-        </ul>
+        <div className='sortingAndHotels'>
+          <Sorting updateSort={this.updateSort} />
+          <div className='hotels'>
+            <ul className='list-unstyled'>
+              {hotels
+                .filter(hotel => !_.difference(filters, hotel.Facilities).length)
+                .sort((hotelA, hotelB) => sort * (hotelA.StarRating - hotelB.StarRating))
+                .map((hotel, i) => (
+                  <Hotel key={i} hotel={hotel} />
+                ))}
+            </ul>
+          </div>
+        </div>
       </div>
     );
   }

@@ -1,3 +1,28 @@
+header {
+  text-align: center
+}
+
+.hotelsContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.filters {
+  border: solid black 1px;
+  border-radius: 10px;
+  margin: 30px;
+  padding: 15px;
+}
+
+.hotels {
+  width: 1000px;
+}
+
+.sorting {
+  display: flex;
+  flex-direction: column;  
+}
+
 .hotel img {
   height: 150px
 }
