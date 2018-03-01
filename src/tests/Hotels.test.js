@@ -49,7 +49,7 @@ describe('Hotels component', () => {
     expect(numberOfHotels2).toEqual(0);
   });
   it('updates state when sort option chosen', () => {
-    const wrapper = shallow(<Hotels />);
+    const wrapper = mount(<Hotels />);
     wrapper.find('select').simulate('change', { target: { value: '-1' } });
     expect(wrapper.state().sort).toEqual(-1);
 

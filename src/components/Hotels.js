@@ -3,6 +3,7 @@ import hotels from '../data/hotels.json';
 import Hotel from './Hotel';
 import Checkboxes from './Checkboxes';
 import _ from 'underscore';
+import Sorting from './Sorting';
 
 class Hotels extends Component {
   state = {
@@ -16,14 +17,7 @@ class Hotels extends Component {
     return (
       <div>
         <Checkboxes handleChange={this.updateFilters} />
-        <div className='form-group'>
-          <label>Sort by: <b>Star Rating</b></label>
-          <select className='form-control col-md-1' onChange={this.updateSort}>
-            <option value='0'>Choose...</option>
-            <option value='-1'>High to Low</option>
-            <option value='1'>Low to High</option>
-          </select>
-        </div>
+        <Sorting updateSort={this.updateSort} />
         <ul className='list-unstyled'>
           {hotels
             .filter(hotel => !_.difference(filters, hotel.Facilities).length)
