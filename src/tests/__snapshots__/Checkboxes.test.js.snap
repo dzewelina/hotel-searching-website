@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Checkboxes component matches the snapshot 1`] = `
+<div
+  className="filters"
+>
+  <h2>
+    Filters
+  </h2>
+  <div
+    className="form-check"
+  >
+    <label
+      className="form-check-label"
+    >
+      <input
+        className="form-check-input"
+        onChange={[Function]}
+        type="checkbox"
+        value="car park"
+      />
+      car park
+    </label>
+  </div>
+  <div
+    className="form-check"
+  >
+    <label
+      className="form-check-label"
+    >
+      <input
+        className="form-check-input"
+        onChange={[Function]}
+        type="checkbox"
+        value="restaurant"
+      />
+      restaurant
+    </label>
+  </div>
+  <div
+    className="form-check"
+  >
+    <label
+      className="form-check-label"
+    >
+      <input
+        className="form-check-input"
+        onChange={[Function]}
+        type="checkbox"
+        value="bar"
+      />
+      bar
+    </label>
+  </div>
+  <div
+    className="form-check"
+  >
+    <label
+      className="form-check-label"
+    >
+      <input
+        className="form-check-input"
+        onChange={[Function]}
+        type="checkbox"
+        value="gym"
+      />
+      gym
+    </label>
+  </div>
+  <div
+    className="form-check"
+  >
+    <label
+      className="form-check-label"
+    >
+      <input
+        className="form-check-input"
+        onChange={[Function]}
+        type="checkbox"
+        value="pool"
+      />
+      pool
+    </label>
+  </div>
+</div>
+`;
